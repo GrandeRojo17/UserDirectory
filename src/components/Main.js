@@ -1,20 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Form, FormGroup, Jumbotron, Label, Input, Button, Card } from "reactstrap";
-import DataArea from "./components/DataArea.js"
+// import DataArea from "./components/DataArea";
 //this will host the employee directory
 
-function Main() {
+export default class Main extends Component {
+  render(){
     
-
-    return (
-        <div>
-        <Button color="danger">Danger!</Button>
-         <p>hello</p> 
-         </div>
-         
-       );
-
-
-
+  }
 }
-export default Main;
