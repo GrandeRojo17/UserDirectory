@@ -1,26 +1,14 @@
 import React, { Component } from "react";
 import Main from "./components/Main";
 
+import { BrowserRouter as Router, Route } from "react-router-dom";
+//returning your main will store the other components and api call 
+function App() {
+  return (<Router>
+    <div>
+      <Route exact path="/" component={Main} />
+    </div>
 
-class App extends Component {
-  // Setting this.state.friends to the friends json array
-  // state = {
-  //   friends
-  // };
-
-  // removeFriend = id => {
-  //   // Filter this.state.friends for friends with an id not equal to the id being removed
-  //   const friends = this.state.friends.filter(friend => friend.id !== id);
-  //   // Set this.state.friends equal to the new friends array
-  //   this.setState({ friends });
-  // };
-
-  // Map over this.state.friends and render a FriendCard component for each friend object
-  render() {
-    return (
-      <Main />
-    );
-  }
+  </Router>)
 }
-
 export default App;
