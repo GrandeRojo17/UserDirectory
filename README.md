@@ -8,10 +8,10 @@
    
   Quickly gather safe information for your entire employee roster. Also quickly filter out to a employee.
 <div>
-<img style="border-style: solid " src="./images/UserDirectory_Pic_01.PNG" width="100%" />
+<img style="border-style: solid " src="./images/UserDirectory_pic_01.PNG" width="100%" />
 <hr>
 <h2>'Quick Look-up' Enabled 🔍 </h2>
-<img style="border-style: solid " src="./images/UserDirectory_Pic_02.PNG" width="100%" />
+<img style="border-style: solid " src="./images/UserDirectory_pic_02.PNG" width="100%" />
 
 
 </div>
