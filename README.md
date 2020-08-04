@@ -4,13 +4,13 @@
  Full APP:  https://fitnesstracker00001.herokuapp.com/
   ![Licenses](https://img.shields.io/badge/license-mit-blue.svg)
    
-  ## **Description0🧑🏽‍💻** 
+  ## **Description📋** 
    
   Quickly gather safe information for your entire employee roster. Also quickly filter out to a employee.
 <div>
 <img style="border-style: solid " src="./images/UserDirectory_Pic_01.PNG" width="100%" />
 <hr>
-<h2>'Quick Look-up' Enabled </h2>
+<h2>'Quick Look-up' Enabled 🔍 </h2>
 <img style="border-style: solid " src="./images/UserDirectory_Pic_02.PNG" width="100%" />
 
 
@@ -29,7 +29,7 @@
    follow the link or otherwise haave a local database nearby.
   ### To install necessary dependencies, run the following command:
    https://fitnesstracker00001.herokuapp.com/ and click "Continue Workout" and then fill in your workout
-  # **Usage🏌️**
+  # **Usage🗂**
   Search through the employees at your leisure.
   # **License🌌**
   mit
