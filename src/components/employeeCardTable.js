@@ -1,9 +1,5 @@
 import React from "react";
-import { Card, Container, Row, Col, Form, FormGroup, Jumbotron, Label, Input, Button } from "reactstrap";
-//Props are used to reference state properties 
-//or the functions used to handle them.
-//If you need to map over results in state you go props.results.map.Also, props.somehandlefunction 
-//refers to a function created.Have a file with state being established and handled beside a state using props
+
 function Table(props) {
     if (props.currentPage === "") {
         return (
@@ -11,8 +7,7 @@ function Table(props) {
                 {/* COLS  */}
                 <thead className="thead-light">
                     <tr>
-                        {/*  Props is referencing a file made in somewhere else in the project. This is how add that function to the DOM.
-                        Then you pass it to the component with this.sortbyFirst */}
+
                         <th scope="col"></th>
                         <th scope="col"><a href="#name" className="alert alert-danger" onClick={() => props.sortByFirst()}>First Name</a></th>
                         <th scope="col"><a href="#name" className="alert alert-danger" onClick={() => props.sortByLast()}>Last Name</a></th>
@@ -20,12 +15,11 @@ function Table(props) {
                         <th scope="col">Email</th>
                     </tr>
                 </thead>
-                {/* Data for the body in the table ROWS*/}
+
                 <tbody>
                     {
                         props.results.map(result => (
-                            //Keys help React identify which items have changed, are added, or are removed
-                            //Key should be specified inside the array
+
                             <tr key={result.cell}>
                                 <th scope="row">
                                     <a href="#singlePage" onClick={() => props.handlePageChange({ result })}>
@@ -42,14 +36,12 @@ function Table(props) {
                 </tbody>
             </table>
         )
-        // the props.currentPage is referring to the name being typed in the search input box.
-        // so that means if a user types in a name("string") then it will filter the results based on the name typed 
+
     } else if (typeof props.currentPage === "string") {
-        // typeof refers to the datatype. so if the type is string input then run the if block.
+
 
         let matches = props.results.filter(result => {
-            // The substring() method extracts the characters from a string, between two specified indices, and returns the new sub string.
-            // string.substring(start, end), start: the position to start the extraction//end: where to end the extraction
+
             return (result.name.first + " " + result.name.last).substring(0, props.currentPage.length).toLowerCase() === props.currentPage.toLowerCase();
         })
         return (
@@ -63,7 +55,7 @@ function Table(props) {
                         <th scope="col">Email</th>
                     </tr>
                 </thead>
-                {/* Same table header BUT return this result with this data if a string is returned: */}
+
                 <tbody>
                     {
                         matches.map(result => (
@@ -85,8 +77,7 @@ function Table(props) {
         )
 
     } else {
-        // Filter the users by at least one property, img was made clickable in table
-        // to render a card with this data:
+
         return (
             <div>
                 <div className="card mb-3 bg-light">
@@ -111,5 +102,5 @@ function Table(props) {
 
 }
 
-// export the Table to be imported into the Container component:
+
 export default Table;
