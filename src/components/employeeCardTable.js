@@ -23,7 +23,7 @@ function Table(props) {
                             <tr key={result.cell}>
                                 <th scope="row">
                                     <a href="#singlePage" onClick={() => props.handlePageChange({ result })}>
-                                        <img src={result.picture.thumbnail} className="picture" alt="http://placekitten.com/200/300"></img>
+                                        <img src={result.picture.thumbnail} className="picture" alt="employee"></img>
                                     </a>
                                 </th>
                                 <td>{result.name.first}</td>
@@ -62,7 +62,7 @@ function Table(props) {
                             <tr key={result.cell}>
                                 <th scope="row">
                                     <a href="#singlePage" className="" onClick={() => props.handlePageChange({ result })}>
-                                        <img src={result.picture.thumbnail} className="picture" alt="http://placekitten.com/200/300"></img>
+                                        <img src={result.picture.thumbnail} className="picture" alt="employee"></img>
                                     </a>
                                 </th>
                                 <td>{result.name.first}</td>
@@ -83,7 +83,7 @@ function Table(props) {
                 <div className="card mb-3 bg-light">
                     <div className="row no-gutters">
                         <div className="photo col-md-4">
-                            <img src={props.currentPage.result.picture.large} className="card-img border border-dark" alt="http://placekitten.com/200/300" />
+                            <img src={props.currentPage.result.picture.large} className="card-img border border-dark" alt="employee" />
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
